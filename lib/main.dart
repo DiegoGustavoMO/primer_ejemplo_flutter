@@ -2,11 +2,11 @@
 import 'package:flutter/material.dart';
 
 //la clase main principal que ejecuta la aplicacion al inciar es
-//en este casso MyApp debe tener la primera letra en mayuscula
+//en este casso MyApp , debe tener la primera letra en mayuscula
 void main() => runApp(MyApp());
 //con este main estoy indicando que ejecute la aplicacion principal
 
-//con la ayuda del los pluggins usamos statlessW o StatefulW
+//con la ayuda del los plugins usamos statlessW o StatefulW
 //la diferencia entre estos es que en el full podemos sobre escribir
 
 //se crea el primer widget (clase) de la aplicacion
@@ -19,11 +19,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //devolvemos un MaterialApp , Material es un patron de diseño de google
-    //material tiene ciertos parametros como title,home
+    //material tiene ciertos parametros como title,home,etc
     //title define el titulo de la aplicacion
     //home lo que aparece en el inicio de la aplicacion
     return MaterialApp(
-      //Para quitar el banner de debug
+      //Para quitar el banner de debug usamos debugshow..
       debugShowCheckedModeBanner: false,
       title: "Mi App",
       home: Inicio(),
