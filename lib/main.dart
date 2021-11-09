@@ -53,8 +53,32 @@ class _InicioState extends State<Inicio> {
         appBar: AppBar(
           title: Text("Mi App"),
         ),
-        body: Center(
-          child: Text("Contenido"),
+        //el widget comlum sirve para organizar los demas widgets en columnas
+        //el limitante es que al agregar contenido dependiendo de la pantalla
+        //no muestra todo a menos que se configure propiedad de tamaño
+        //si lo que se quiere mostrar es una lista en forma de columna
+        //entonces se puede usar el widget ListView
+        body: ListView(
+          children: [
+            Container(
+              //container tiene una propiedad de padding para configurar los bordes
+              //usar valor float o double con punto flotante
+              //la propiedad EdgeInsets.all aplica para todos los lados
+              padding: EdgeInsets.all(20.0),
+              child: Image.network(
+                  'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+            ),
+            Container(
+              padding: EdgeInsets.all(20.0),
+              child: Image.network(
+                  "https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg"),
+            ),
+            Container(
+              padding: EdgeInsets.all(20.0),
+              child: Image.network(
+                  "https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg"),
+            ),
+          ],
         ));
   }
 }
