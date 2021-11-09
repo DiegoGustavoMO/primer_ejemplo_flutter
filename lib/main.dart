@@ -47,7 +47,7 @@ class _InicioState extends State<Inicio> {
   Widget build(BuildContext context) {
     //debemos retornar un widget usado en aplicaciones tradicionales
     //llamado Scaffold()
-    //debemos recordar que hay widget que son contenedores de otros widgets
+    //debemos recordar que hay widgets que son contenedores de otros widgets
     //por eso se ve como si fuera una clase dentro de otra clase
     return Scaffold(
         appBar: AppBar(
