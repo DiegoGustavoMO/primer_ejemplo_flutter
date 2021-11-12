@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 //con este main estoy indicando que ejecute la aplicacion principal
 
-//con la ayuda del los plugins usamos statlessW o StatefulW
+//con la ayuda del los plugins  de  visutal studio code usamos statlessW o StatefulW
 //la diferencia entre estos es que en el full podemos sobre escribir
 
 //se crea el primer widget (clase) de la aplicacion
@@ -53,7 +53,7 @@ class _InicioState extends State<Inicio> {
         appBar: AppBar(
           title: Text("Mi App"),
         ),
-        //el widget comlum sirve para organizar los demas widgets en columnas
+        //el widget column sirve para organizar los demas widgets en columnas
         //el limitante es que al agregar contenido dependiendo de la pantalla
         //no muestra todo a menos que se configure propiedad de tamaño
         //si lo que se quiere mostrar es una lista en forma de columna
@@ -62,8 +62,12 @@ class _InicioState extends State<Inicio> {
           children: [
             Container(
               //container tiene una propiedad de padding para configurar los bordes
-              //usar valor float o double con punto flotante
+              //usar valor float o double , con punto flotante
               //la propiedad EdgeInsets.all aplica para todos los lados
+              //las imagenes que se traen de internet no deben esta bloqueadas
+              //para su uso en otros sitios , en defecto sacar las imagenes del
+              //mismo servidor donde esta el back o la aplicacion
+              //almacenar localmente las imagenes aumenta el tamaño de la aplicacion y no queremos eso.
               padding: EdgeInsets.all(20.0),
               child: Image.network(
                   'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
